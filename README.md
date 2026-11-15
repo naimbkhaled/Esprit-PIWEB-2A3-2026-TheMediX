@@ -30,20 +30,19 @@ Les principales fonctionnalités de MEDIX sont :
 1. Cloner le repository :
 
 ```bash
-git clone URL_DU_REPOSITORY
+git clone https://github.com/naimbkhaled/the-MediX
 ```
 
 2. Entrer dans le dossier :
 
 ```bash
-cd MediX
+cd TheMediX
 ```
 
 3. Préparer l'environnement nécessaire au projet.
 4. Configurer la base de données MySQL et importer le fichier SQL s'il est fourni.
 5. Lancer le projet avec le serveur local utilisé.
 
-*Remarque : il faut adapter les étapes selon les fichiers et la configuration du projet.*
 
 ## Utilisation
 
