@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <title>Accueil | The Medix</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+    <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="spinner">THE MEDIX</div>
+<nav class="navbar glass">
+    <a href="index.html" class="brand grad-text">THE MEDIX</a>
+    <div class="links">
+        <a href="index.html"          class="active">Accueil</a>
+        <a href="consultations.html" class="">Consultations</a>
+        <a href="messages.html"      class="">Messages</a>
+        <a href="mesures.html"       class="">Glycémie</a>
+        <a href="alertes.html"       class="">Alertes</a>
+    </div>
+    <button id="theme-toggle" type="button" class="btn theme-btn" aria-label="Clair / Sombre" title="Clair / Sombre">◐</button>
+</nav>
+
+<!-- Contenu propre à la page -->
+<div class="container">
+    <section class="hero">
+        <span class="eyebrow">Santé connectée</span>
+        <h1>Téléconsultation et <span class="grad-text">suivi de la glycémie</span></h1>
+        <p>Consultez votre médecin à distance et suivez votre glycémie.</p>
+        <div class="actions">
+            <a class="btn" href="consultations.html">Mes consultations →</a>
+            <a class="btn btn-ghost" href="mesures.html">Ma glycémie</a>
+        </div>
+    </section>
+    <div class="features">
+        <div class="feature glass"><i>▶</i><b>Vidéo</b><span>Rejoignez votre médecin en un clic.</span></div>
+        <div class="feature glass"><i>◉</i><b>Glycémie</b><span>Toutes vos mesures au même endroit.</span></div>
+        <div class="feature glass"><i>!</i><b>Alertes</b><span>Prévenu dès qu'un seuil est dépassé.</span></div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2026 The Medix - Projet Technologies Web 2A</p>
+</footer>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

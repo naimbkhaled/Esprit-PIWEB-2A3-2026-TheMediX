@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <title>Mes alertes | The Medix</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+    <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="spinner">THE MEDIX</div>
+<nav class="navbar glass">
+    <a href="index.html" class="brand grad-text">THE MEDIX</a>
+    <div class="links">
+        <a href="index.html"          class="">Accueil</a>
+        <a href="consultations.html" class="">Consultations</a>
+        <a href="messages.html"      class="">Messages</a>
+        <a href="mesures.html"       class="">Glycémie</a>
+        <a href="alertes.html"       class="active">Alertes</a>
+    </div>
+    <button id="theme-toggle" type="button" class="btn theme-btn" aria-label="Clair / Sombre" title="Clair / Sombre">◐</button>
+</nav>
+
+<!-- Contenu propre à la page -->
+<div class="container">
+    <h2 class="page-title">Mes alertes</h2>
+        <div class="message glass">
+            <span class="badge" data-v="hypoglycémie">hypoglycémie</span>
+            <small>2026-11-16 07:31</small>
+            <p>Glycémie trop basse : prenez du sucre.</p>
+        </div>
+        <div class="message glass">
+            <span class="badge" data-v="hyperglycémie">hyperglycémie</span>
+            <small>2026-11-16 14:01</small>
+            <p>Glycémie élevée : recontrôlez dans 1 heure.</p>
+        </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2026 The Medix - Projet Technologies Web 2A</p>
+</footer>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultations | The Medix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+<script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="spinner">THE MEDIX</div>
+<aside class="sidebar glass">
+    <div class="logo grad-text">THE MEDIX</div>
+    <nav>
+        <a href="index.html"          class="">Accueil</a>
+        <a href="consultations.html" class="active">Consultations</a>
+        <a href="messages.html"      class="">Messages</a>
+        <a href="mesures.html"       class="">Mesures glycémie</a>
+        <a href="alertes.html"       class="">Alertes</a>
+    </nav>
+</aside>
+<main class="main-wrapper">
+    <header class="topbar glass">
+    <input type="text" placeholder="Rechercher...">
+    <button id="theme-toggle" type="button" class="btn theme-btn" aria-label="Mode clair / sombre" title="Mode clair / sombre">◐</button>
+    <span class="doctor"><span class="avatar">DM</span>Dr Martin</span>
+</header>
+
+    <section class="content">
+<h2 class="page-title">Consultations</h2>
+<div class="table-card glass"><table>
+    <tr><th>#</th><th>Patient</th><th>Médecin</th><th>Date</th><th>Motif</th><th>Statut</th></tr>
+    <tr>
+        <td>1</td>
+        <td>Sami Ben Ali</td>
+        <td>Dr Martin</td>
+        <td>2026-11-20 10:30</td>
+        <td>Suivi diabète</td>
+        <td><span class="badge" data-v="planifiée">planifiée</span></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Salma Trabelsi</td>
+        <td>Dr Martin</td>
+        <td>2026-11-18 09:15</td>
+        <td>Résultats analyses</td>
+        <td><span class="badge" data-v="terminée">terminée</span></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Karim Jaziri</td>
+        <td>Dr Dupont</td>
+        <td>2026-11-22 14:00</td>
+        <td>Contrôle tension</td>
+        <td><span class="badge" data-v="planifiée">planifiée</span></td>
+    </tr>
+</table></div>
+    </section>
+
+    <footer class="footer">
+    <p>&copy; 2026 The Medix - Projet Technologies Web 2A</p>
+</footer>
+</main>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
