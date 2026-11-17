@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alertes médicales | MediX</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="app-shell">
+<aside class="sidebar "><a class="brand" href="index.html"><span class="brand-mark">+</span><span>Medi<span class="brand-light">X</span><small>ESPACE PATIENT</small></span></a>
+<div class="nav-label">MENU PRINCIPAL</div><nav><a class="nav-link " href="index.html"><span class="nav-icon">▦</span>Vue générale</a><a class="nav-link " href="rappels.html"><span class="nav-icon">◷</span>Rappels médicaments</a><a class="nav-link " href="contacts.html"><span class="nav-icon">♧</span>Contacts d’urgence</a><a class="nav-link active" href="alertes.html"><span class="nav-icon">⚑</span>Alertes médicales</a></nav><div class="sidebar-note"><span>ⓘ</span><strong>Besoin d’aide ?</strong><p>En cas d’urgence médicale, contactez les services de secours.</p><a href="tel:190">SAMU 190</a><a href="tel:198">Protection civile 198</a></div><div class="nav-switch">→ <a href="admin-index.html">Voir le Back Office</a></div><div class="sidebar-bottom">Projet académique · 2026–2027</div></aside>
+<main class="main-area "><header class="topbar"><div><span class="eyebrow">ESPACE PATIENT</span><h1>Alertes médicales</h1></div><div class="user-chip"><span class="avatar">P</span><span><b>Patient</b><small>Compte démo</small></span></div></header>
+<section class="page-content"><div class="page-intro"><div><p class="muted">Suivi et historique</p><h2>Alertes médicales</h2><p class="muted">Déclarez un événement et conservez-le dans votre historique.</p></div></div><div class("content-grid"):
+    <section class("panel form-panel"):
+        <div class("panel-heading"):
+            <div>
+                <h3>Nouvelle alerte</h3>
+                <p>Une alerte est enregistrée localement dans l’application.</p>
+            </div>
+        </div>
+        <form class("form-grid") onsubmit("return false")>
+            <label class("full")>
+                Type d’alerte
+                <select name("t")>
+                    <option>SOS</option>
+                    <option>Hypoglycémie</option>
+                    <option>Hyperglycémie</option>
+                    <option>Rappel ignoré</option>
+                    <option>Absence de données capteur</option>
+                    <option>Autre</option>
+                </select>
+            </label>
+            <label class(""):
+                Valeur glycémie (facultatif)
+                <input type("number") placeholder("Ex. 1.20")>
+            </label>
+            <label class(""):
+                Contact à associer
+                <select name("c")>
+                    <option>Aucun contact</option>
+                    <option>Sami Ben Ali}</option>
+                    <option>Leila Trabelsi}</option>
+                    <option>Yassine Gharbi}</option>
+                </select>
+            </label>
+            <label class("full"):
+                Description
+                <textarea rows("4") placeholder("Décrivez brièvement la situation…")></textarea>
+            </label>
+            <div	class("full consent-note"):
+                Le partage des données avec un proche nécessite le consentement explicite du patient.
+            </div >
+            <button	class("btn btn-danger full") type("submit") >
+                Enregistrer l’alerte
+            </button >
+        </form >
+    </section >
+    <section	class("panel"):
+        <div	class("panel-heading"):
+            <div >
+                <h3>Historique des alertes		<h3 >
+               	<p >4 événement(s) enregistré(s)</p >
+            </ div >
+        </ div >
+       	<div	class("table-wrap"):
+       		<table >
+       			<thead >
+       				<tr >
+       					<th >Type	<th >
+       					<th >Date	<th >
+       					<th >Glycémie	<th >
+       					<th >Description	<th >
+       					<th >Statut	<th >
+       				<tr >
+       			<thead >
+       			<tbody >
+       				<tr >
+       					<td ><b >SOS<b ></td >
+       					<td >16/11/2026 22:14<td ></td >
+                        td >—<td ></td >
+                        td >Malaise soudain<td ></td >
+                        td >< spanclass ="status new" >Nouvelle< / span >< / td >
+                    </tr >
+                    tr >
+                        td ><b >Hypoglycémie<b ></td >
+                        td >15/11/2026 07:40<td ></td >
+                        td >0.60<td ></td >
+                        td >Tremblements et sueurs<td ></td >
+                        td >< spanclass ="status done" >Traitée< / span >< / td >
+                    </tr >
+                    tr >
+                        td ><b >Hyperglycémie<b ></td >
+                        td >12/11/2026 19:05<td ></td >
+                        td >2.40<td ></td >
+                        td >Après le repas<td ></td >
+                        td >< spanclass ="status done" >Traitée< / span >< / td >
+                    </tr >
+                    tr >
+                        td ><b >Rappel ignoré<b ></td >
+                        td >10/11/2026 21:30<td ></td >
+                        td >—<td ></td >
+                        td >Insuline non confirmée<td ></td >
+                        td >< spanclass ="status new" >Nouvelle< / span >< / td >
+                    </tr >
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<divclass ="notice warning-notice">
+   <b>Important :</b> cette application ne remplace pas un avis médical ni les services de secours. En cas d’urgence, appelez le SAMU (190) ou la Protection civile (198). Elle ne recommande et n’administre jamais automatiquement une dose d’insuline.
+    div>
+    footerclass ="footer">
+    span>&copy; 2026 MediX — Projet Technologies Web 2A<span>
+    span>Vos données de santé restent confidentielles.</span>
+    footer>
+    main>
+    div>
+    body>
+    html>
