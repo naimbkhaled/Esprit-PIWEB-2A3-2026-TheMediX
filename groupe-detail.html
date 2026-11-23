@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ===== HEAD : à extraire vers includes/head.php ($pageTitle) ===== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Détail du groupe | HealthConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- ===== NAVBAR : à extraire vers includes/navbar.php ($currentPage = 'groupes') ===== -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="publications.html"><i class="bi bi-heart-pulse"></i> HealthConnect</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li><li class="nav-item"><a class="nav-link active fw-semibold" href="groupes.html">Groupes de soutien</a></li><li class="nav-item"><a class="nav-link" href="publication-form.html">Nouvelle publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="../back/admin-publications.html">Espace admin</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== CONTENU PRINCIPAL : propre à la page ===== -->
+<main class="container py-4">
+  <a href="groupes.html" class="text-decoration-none">&larr; Retour aux groupes</a>
+  <div class="post-card bg-white p-4 my-3 d-flex flex-wrap justify-content-between align-items-center">
+    <div><h1 class="h4">Cuisine saine</h1><p class="text-muted mb-0">Recettes et idées de repas équilibrés. 86 membres.</p></div>
+    <button class="btn btn-outline-danger">Quitter le groupe</button>
+  </div>
+  <div class="row g-3">
+    <div class="col-lg-8">
+      <form action="#" method="post" class="post-card bg-white p-3 mb-3">
+        <textarea name="contenu" rows="2" class="form-control mb-2" placeholder="Posez une question au groupe..." required></textarea>
+        <button class="btn btn-hc btn-sm">Publier dans le groupe</button>
+      </form>
+  <article class="post-card bg-white p-3 mb-3">
+    <div class="d-flex justify-content-between"><span class="badge cat">Nutrition</span><small class="text-muted">10 nov. 2026</small></div>
+    <h2 class="h5 mt-2"><a class="text-decoration-none text-dark" href="publication-detail.html">Idées de petit-déjeuner équilibré</a></h2>
+    <p class="mb-2 text-muted">Je cherche des petits-déjeuners simples et rassasiants qui ne font pas monter la glycémie.</p>
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <small><i class="bi bi-person"></i> Amel T. &nbsp; <i class="bi bi-chat"></i> 3 commentaires</small>
+      <div><a href="publication-detail.html" class="btn btn-sm btn-hc">Lire et commenter</a></div>
+    </div>
+  </article>
+  <article class="post-card bg-white p-3 mb-3">
+    <div class="d-flex justify-content-between"><span class="badge cat">Nutrition</span><small class="text-muted">14 nov. 2026</small></div>
+    <h2 class="h5 mt-2"><a class="text-decoration-none text-dark" href="publication-detail.html">Comment réduire le sucre sans frustration ?</a></h2>
+    <p class="mb-2 text-muted">Depuis quelques semaines j’essaie de limiter le sucre. Avez-vous des astuces pour les envies de dessert ?</p>
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <small><i class="bi bi-person"></i> Sarra B. &nbsp; <i class="bi bi-chat"></i> 5 commentaires</small>
+      <div><a href="publication-detail.html" class="btn btn-sm btn-hc">Lire et commenter</a></div>
+    </div>
+  </article>
+    </div>
+    <aside class="col-lg-4"><div class="post-card bg-white p-3">
+      <h2 class="h6">Membres</h2>
+      <ul class="list-unstyled mb-0"><li><i class="bi bi-person"></i> Sarra B. (créatrice)</li><li><i class="bi bi-person"></i> Amel T.</li><li><i class="bi bi-person"></i> Karim M.</li><li><i class="bi bi-person"></i> Vous</li></ul>
+    </div></aside>
+  </div>
+</main>
+
+<!-- ===== FOOTER : à extraire vers includes/footer.php ===== -->
+<footer class="footer-hc py-4 mt-5">
+  <div class="container d-flex flex-wrap justify-content-between">
+    <span>© 2026 HealthConnect, communauté santé</span>
+    <span>Les échanges ne remplacent pas un avis médical.</span>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS : à extraire vers includes/scripts.php ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
