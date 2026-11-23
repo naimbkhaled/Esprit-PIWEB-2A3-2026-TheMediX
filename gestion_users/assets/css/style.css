@@ -1,0 +1,36 @@
+:root{
+  --ink:#1c2b36; --muted:#5f7280; --paper:#f4f7f8; --card:#ffffff;
+  --line:#d5dee3; --accent:#0f6b73; --accent-dark:#0a4f55; --danger:#b3261e; --ok:#1d6b3a;
+}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 16px;background:var(--paper);color:var(--ink);
+  font-family:"Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.5}
+.card{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:32px}
+.card.wide{max-width:1200px}
+h1{margin:0 0 24px;font-size:1.6rem;font-weight:650}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.field{margin-bottom:16px}
+label{display:block;font-size:.9rem;font-weight:600;margin-bottom:4px}
+input[type=text],input[type=date],input[type=email],input[type=tel],input[type=password],select,input[type=file]{width:100%;padding:10px 12px;
+  border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.invalid{border-color:var(--danger)!important}
+.err{display:block;min-height:1.1em;color:var(--danger);font-size:.82rem;margin-top:3px}
+.role{display:flex;gap:12px;margin-bottom:20px}
+.role label{display:flex;align-items:center;gap:8px;margin:0;padding:10px 16px;
+  border:1px solid var(--line);border-radius:6px;cursor:pointer;font-weight:500}
+.role label:has(input:checked){border-color:var(--accent);background:#e8f3f4}
+.doctor{border:1px solid var(--line);border-radius:8px;padding:16px 16px 0;margin:0 0 16px}
+.doctor legend{padding:0 8px;font-weight:600}
+.doctor[hidden]{display:none}
+button{padding:11px 22px;border:0;border-radius:6px;background:var(--accent);color:#fff;
+  font:inherit;font-weight:600;cursor:pointer}
+button:hover{background:var(--accent-dark)}
+button.danger{background:var(--danger);padding:6px 12px;font-size:.85rem}
+.ok{background:#e6f4ea;color:var(--ok);padding:12px 14px;border-radius:6px;margin-bottom:20px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.card{padding:20px}}
